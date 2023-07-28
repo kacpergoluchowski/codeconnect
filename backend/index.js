@@ -6,7 +6,7 @@ const bp = require('body-parser');
 const app = express();
 const port = 5000;
 const { MongoClient } = require("mongodb");
-const client = new MongoClient(process.env.REACT_APP_MONGO_URL);
+const client = new MongoClient(process.env.MONGO_URL);
 
 app.use(cors());
 app.use(bp.json());
@@ -22,7 +22,7 @@ app.post('/mail', (req, res) => {
         service: 'gmail',
         auth: {
             user: "kgoluchowski112@gmail.com",
-            pass: "ihzxvisakbsrykcu"
+            pass: "uyzaetzqltoqwllk"
         }
     })
 
